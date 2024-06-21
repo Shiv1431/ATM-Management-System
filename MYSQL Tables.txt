@@ -1,0 +1,4 @@
+CREATE DATABASE atm;      
+CREATE TABLE Customers(ID int primary key auto_increment, CardNumber varchar(16), Pin varchar(4), UserName varchar(25), Balance int);
+CREATE TABLE Passbook(TransID int primary key auto_increment, ID int, Amount int, state varchar(10), Balance int);
+INSERT INTO Customers VALUES(1, "admin", "1234", "admin", 0);   // for admin
